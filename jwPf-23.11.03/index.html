@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <title> 박정욱 - 포트폴리오</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <!-- wow.min.js의 css ->  animate.min.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="shoutcut icon" href="./images/fv.svg">
+    <script src="./js/jquery-1.11.3.min.js"></script>
+    <script src="./js/main.js"></script>
+    <!-- 제이쿼리의 animate의 제약사항을 해결해주는 TweenMax -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/TweenMax.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script>
+        new WOW().init();
+        // new 키워드는, 새로운 객체 만들때 사용
+        // 새로 생성된 WOW() 객체에 .init()이라는 메서드 호출
+        //  .init()이라는 메서드는, 객체 초기화시 사용
+        // -> 'WOW() 객체 만들고 이를 초기화' 하는 Javascript 코드
+    </script>
+</head>
+
+<body>
+    <!-- #wrap>header>.header_main>h1.logo+ul.nav>li*3 -->
+    <div id="wrap">
+        <!-- =================================
+                header 
+        ================================== -->
+        <header>
+            <div class="header_main">
+                <h1 class="logo">
+                    <a href="#"><span class="logoImg"></span>
+                        JUNGUK <span class="pf"> PORTFOLIO</span>
+                    </a>
+                </h1>
+                <ul class="nav">
+                    <!-- &nbsp; 한칸 띄기 엔티티기호 -->
+                    <li>[&nbsp; &nbsp; ABOUT &nbsp; &nbsp; ]</li>
+                    <li>[&nbsp; &nbsp; PORTFOLIO &nbsp; &nbsp; ]</li>
+                    <li>[&nbsp; &nbsp; OTHER DESIGN &nbsp; &nbsp; ]</li>
+                </ul>
+            </div>
+        </header>
+        <!-- =================================
+                  profile
+        ================================== -->
+        <!-- section#profile>h2.blind{profile}+.profile_main -->
+        <section id="profile">
+            <h2 class="blind">profile</h2>
+            <div class="profile_main">
+                <!-- .p_left>.img -->
+                <!-- left img 내 사진 -->
+                <div class="p_left">
+                    <div class="img">
+
+                    </div>
+                </div>
+                <!-- right text 내 소개글-->
+                <!-- .p_right>dl>dt+dd -->
+                <div class="p_right">
+                    <dl>
+                        <dt>PRODUCT DESIGN <br />
+                            <span> &amp; WEB DEVELOPER </span>
+                        </dt>
+                        <dd>
+                            안녕하세요? Product Designer 박정욱입니다. <br /><br />
+                            사용자로 하여금 편의성과 만족도 높은 웹페이지를 제작하는 것이 저의 목표입니다. <br />
+                            부족한 부분은 배워나가며,
+                            <span>소통을 중시하는 마음가짐</span>으로 노력하겠습니다. <br />
+                            트렌드에 맞춰 쉬지 않고 노력하는 프로덕트 디자이너가 되겠습니다.
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+        </section>
+
+        <!-- =================================
+                  skill
+                 (tools = 포토샵,일러스트(위지웍방식프로그램사용))
+                 (skill = 코딩능력, 발표능력 = html,css,presentation)
+        ================================== -->
+        <!-- sectiion#skill>.skill_main>h2+h3 -->
+        <section id="skill">
+            <div class="skill_main">
+                <h2>알아보기</h2>
+                <h3>ABOUT</h3>
+                <!-- .box.about>i.xi-user-plus.xi-2x -->
+                <!-- 1.ABOUT -->
+                <div class="box about">
+                    <i class="xi-user-plus xi-2x"></i>
+                    <!-- dl>dt+dd -->
+                    <dl>
+                        <dt>ABOIUT</dt>
+                        <dd>박정욱</dd>
+                        <dd>2000-03-18</dd>
+                        <dd>서울시 은평구 갈현동</dd>
+                        <dd>UI/UX웹퍼블리셔 피그마반</dd>
+						
+                    </dl>
+                </div>
+                <!-- 2.Contacts-->
+                <!-- .box.contacts>i.xi-comment.xi-2x -->
+                <div class="box contacts">
+                    <i class="xi-comment xi-2x"></i>
+                    <!-- dl>dt+dd -->
+                    <dl>
+                        <dt>CONTACTS</dt>
+                        <dd>
+                            <i class="xi-call xi-2x"></i>
+
+                            <span> 010-7168-7616</span>
+                        </dd>
+                        <dd>
+                            <i class="xi-mail xi-2x"></i>
+                            <span> junguk318@naver.com</span>
+                        </dd>
+                    </dl>
+                </div>
+                <!-- 3.Licenses-->
+                <!-- .box.licenses>i.xi-book.xi-2x -->
+                <div class="box licenses">
+                    <i class="xi-book xi-2x"></i>
+                    <!-- dl>dt+dd*4 -->
+                    <dl>
+                        <dt>LICENSES</dt>
+                        <dd>GTQ포토샵</dd>
+                    </dl>
+                </div>
+
+                <!-- 4.Tools-->
+                <!-- .box.tools>i.xi-desktop.xi-2x -->
+                <div class="box tools">
+                    <i class="xi-desktop xi-2x"></i>
+                    <!-- dl>dt+dd*6 -->
+                    <dl>
+                        <dt>TOOLS</dt>
+                        <dd>Figma</dd>
+                        <dd>Adobe Photoshop</dd>
+                        <dd>Adobe Illustrator</dd>
+                        <dd>Adobe Premier</dd>
+                        <dd>Adobe Aftereffect</dd>
+                        <dd>Adobe Animate</dd>
+                        <dd>Visual Studio Code</dd>
+                    
+                    </dl>
+                </div>
+
+                <!-- 5.Skills-->
+                <!-- .box.skills>i.xi-code.xi-2x -->
+                <div class="box skills">
+                    <i class="xi-code xi-2x"></i>
+                    <dl>
+                        <dt>SKILLS</dt>
+                        <dd>HTML5</dd>
+                        <dd>CSS3</dd>
+                        <dd>JavaScript</dd>
+                        <dd>jQuery</dd>
+                        <dd>React</dd>
+                        <dd>Presentation</dd>
+                    </dl>
+                </div>
+            </div>
+        </section>
+        <!-- =================================
+                portfolio
+        ================================== -->
+        <!-- section#portfolio>h2+h3+.portfolio_main>dl>dt+dd>h4+h5+p -->
+        <section id="portfolio">
+            <h2>포트폴리오</h2>
+            <h3>PORTFOLIO</h3>
+            <div class="portfolio_main">
+
+                <!-- 1 -->
+                <dl class="wow animate__animated animate__fadeInLeft">
+                    <!-- 폿폴이미지 - background-position -->
+                    <dt></dt>
+                    <!-- 폿폴설명 -->
+                    <dd>
+                        <h4>01. 한화케미칼</h4>
+                        <h5>HANHWA <br /> CEHMICAL</h5>
+                        <p>WEB CODING <br />
+                            제작 : 메인페이지 리뉴얼 <br /><br /><br />
+                            한화케미칼 사이트를 <br />
+                            그리드 시스템에 맞추어 코딩하였습니다.
+
+                            <!-- btn -->
+                            <!-- p.site_btn>a -->
+                            <p class="site_btn">
+                                <a href="https://jungukpark.github.io/hanwha/" target="_blank">
+                                    <!-- target="_blank" : 별도의 페이지로 사이트 보여주기 -->
+                                    WEBSITE
+                                </a></p>
+                        </p>
+                    </dd>
+                </dl>
+
+                <!-- 2 -->
+                <dl class="wow animate__animated animate__fadeInRight">
+                    <!-- 폿폴이미지 - background-position -->
+                    <dt></dt>
+                    <!-- 폿폴설명 -->
+                    <dd>
+                        <h4>02. Samyang</h4>
+                        <h5>Samyang</h5>
+                        <p>WEB CODING <br />
+                            제작 : 반응형 웹 메인<br /><br /><br />
+                            삼양식품 사이트를 <br />
+                            Samyang 메인 페이지를 반응형으로 코딩하였습니다.
+
+                            <!-- btn -->
+                            <!-- p.site_btn>a -->
+                            <p class="site_btn">
+                                <a href="https://jungukpark.github.io/samyang/" target="_blank">
+                                    <!-- target="_blank" : 별도의 페이지로 사이트 보여주기 -->
+                                    WEBSITE
+                                </a></p>
+                        </p>
+                    </dd>
+                </dl>
+
+                <!-- 3-->
+                <dl class="wow animate__animated animate__fadeInLeft">
+                    <!-- 폿폴이미지 - background-position -->
+                    <dt></dt>
+                    <!-- 폿폴설명 -->
+                    <dd>
+                        <h4>03. skPicGlobal</h4>
+                        <h5>SK <br /> PicGlobal</h5>
+                        <p>RESPONSIVE WEB <br />
+                            제작 : 반응형 웹 메인 <br /><br /><br />
+                            skPicGlobal 메인 페이지를 반응형으로 코딩하였습니다.
+
+                            <!-- btn -->
+                            <!-- p.site_btn>a -->
+                            <p class="site_btn">
+                                <a href="https://jungukpark.github.io/SK-Picglobal/" target="_blank">
+                                    <!-- target="_blank" : 별도의 페이지로 사이트 보여주기 -->
+                                    WEBSITE
+                                </a></p>
+                        </p>
+                    </dd>
+                </dl>
+
+
+
+
+                <!-- 4-->
+                <dl class="wow animate__animated animate__fadeInRight">
+                    <!-- 폿폴이미지 - background-position -->
+                    <dt></dt>
+
+                    <!-- 폿폴설명 -->
+                    <dd>
+                        <h4>04. Itsix</h4>
+                        <h5>Itsix </h5>
+                        <p>WEB CODING <br />
+                            제작 : 메인페이지 리뉴얼 <br /><br /><br />
+                            Itsix 홈페이지를 <br />
+                            반응형으로 코딩하였습니다.
+                            <!-- btn -->
+                            <!-- p.site_btn>a -->
+                            <p class="site_btn">
+                                <a href="https://jungukpark.github.io/itsix/" target="_blank">
+                                    <!-- target="_blank" : 별도의 페이지로 사이트 보여주기 -->
+                                    WEBSITE
+                                </a></p>
+                        </p>
+                    </dd>
+
+                </dl>
+
+
+                <!-- 5-->
+                <dl class="wow animate__animated animate__fadeInLeft">
+                    <!-- 폿폴이미지 - background-position -->
+                    <dt></dt>
+
+                    <!-- 폿폴설명 -->
+                    <dd>
+                        <h4>05. 프로야구 앱 </h4>
+                        <h5>KBO+</h5>
+                        <p>Figma Design <br />
+                            제작 : KBO 신규 리뉴얼 <br /><br /><br />
+                            KBO 앱을<br />
+                            피그마로 기획, 설계, 디자인 하였습니다<div class=""></div>
+                            <!-- btn -->
+                            <!-- p.site_btn>a -->
+                            <p class="site_btn">
+                                <a href="https://www.figma.com/proto/zVJW4h9FD5Hin2oDxxxn7N/KBO?type=design&node-id=29-32&t=fFpaKnuPo1Rl3Moz-1&scaling=scale-down&page-id=0%3A1&starting-point-node-id=29%3A32&mode=design"
+                                    target="_blank">
+                                    <!-- target="_blank" : 별도의 페이지로 사이트 보여주기 -->
+                                    VIEW
+                                </a></p>
+                        </p>
+                    </dd>
+                </dl>
+            </div>
+        </section>
+        <!-- =================================
+                  etc - 기타디자인
+        ================================== -->
+        <!-- section#etc>h2+h3+.etc_main -->
+        <section id="etc">
+            <h2>기타디자인</h2>
+            <h3>OTHER DESIGN</h3>
+            <div class="etc_main">
+                <!-- 1번째 기타디자인 -->
+                <!-- dl.etc_1>dt>p>strong+i -->
+                <dl class="etc_1">
+                    <!-- 이미지 -->
+                    <dt>
+                        <p>
+                            <strong>자세히보기</strong>
+                            <!-- 썸네일이미지 i -->
+                            <i></i>
+                        </p>
+                    </dt>
+                    <!-- 설명 -->
+                    <dd>
+                        <span>
+                            system Design &#124; 그래프
+                        </span> 시스템 디자인
+                    </dd>
+                </dl>
+                <!-- 2번째 기타디자인 -->
+                <dl class="etc_2">
+                    <!-- 이미지 -->
+                    <dt>
+                        <p><strong>자세히보기</strong>
+                            <i></i>
+                        </p>
+                    </dt>
+                    <!-- 설명 -->
+                    <dd>
+                        <span> Apple Music APP &#124; 애플뮤직 앱</span>
+                        애플뮤직 앱 디자인
+                    </dd>
+                </dl>
+                <!-- 3번째 기타디자인 -->
+                <dl class="etc_3">
+                    <!-- 이미지 -->
+                    <dt>
+                        <p><strong>자세히보기</strong>
+                            <i></i>
+                        </p>
+                    </dt>
+                    <!-- 설명 -->
+                    <dd>
+                        <span>LOGO &#124; 로고 </span>
+                        로고 디자인
+                    </dd>
+                </dl>
+                <!-- 4번째 기타디자인 -->
+                <dl class="etc_4">
+                    <!-- 이미지 -->
+                    <dt>
+                        <p><strong>자세히보기</strong>
+                            <i></i>
+                        </p>
+                    </dt>
+                    <!-- 설명 -->
+                    <dd>
+                        <span>SNS &#124; 홍보 </span>
+                        SNS 디자인
+                    </dd>
+                </dl>
+                <!-- 5번째 기타디자인 -->
+                <dl class="etc_5">
+                    <!-- 이미지 -->
+                    <dt>
+                        <p><strong>자세히보기</strong>
+                            <i></i>
+                        </p>
+                    </dt>
+                    <!-- 설명 -->
+                    <dd>
+                        <span> Indesign &#124; 고양이잡지</span>
+                        CAT MAGAZINE
+                    </dd>
+                </dl>
+            </div>
+        </section>
+        <!-- =================================
+                  footer
+        ================================== -->
+
+        <!-- footer>.footer_main>img+ul.sns+.copyright -->
+        <footer>
+            <div class="footer_main">
+                <!-- 클릭시 최상단으로 바로가기 버튼 -->
+                <img src="./images/btn_top.png" alt="클릭시 최상단 화살표" class="btn_top">
+                <ul class="sns">
+                    <!-- li*2>a+i.xi-mobile -->
+                    <li><a href="tel:010-7168-7616">
+                            <i class="xi-mobile"></i></a>
+                    </li>
+                    <li><a href="junguk318s@naver.com">
+                            <i class="xi-naver"></i></a>
+                    </li>
+                </ul>
+                <div class="copyright">
+                    <p>
+                        &copy; JUNGUK. All rights reserved.
+                    </p>
+                </div>
+            </div>
+        </footer>
+        <!-- =================================
+                  box slide
+        ================================== -->
+        <!-- #popup>.popup_main>.bg>p.close{팝업창을 닫으시려면 아무 곳이나 클릭하세요} -->
+        <div id="popup">
+            <div class="popup_main">
+                <!-- bg -->
+                <div class="bg">
+                    <p class="close">팝업창을 닫으시려면 아무 곳이나 클릭하세요</p>
+                </div>
+
+                <!-- popup 1 -->
+                <div class="popup1 popup">
+                    <!-- 이전, 다음 화살표 -->
+                    <!-- button.prev{&#60;} -->
+                    <button class="prev">&#60;</button>
+                    <button class="next">&#62;</button>
+                    <!-- 이미지들 -->
+                    <!-- ul.popList>li.popImg*3>img -->
+                    <ul class="popList">
+                        <li class="popImg"><img src="./images/popup/1-1.png" alt="#"></li>
+                        <li class="popImg"><img src="./images/popup/1-2.png" alt="#"></li>
+                        <li class="popImg"><img src="./images/popup/1-3.png" alt="#"></li>
+                    </ul>
+                </div>
+                <!-- popup 2 -->
+                <div class="popup2 popup">
+                    <!-- 이전, 다음 화살표 -->
+                    <!-- button.prev{&#60;} -->
+                    <button class="prev">&#60;</button>
+                    <button class="next">&#62;</button>
+                    <!-- 이미지들 -->
+                    <!-- ul.popList>li.popImg*3>img -->
+                    <ul class="popList">
+                        <li class="popImg"><img src="./images/popup/2-1.png" alt="#"></li>
+                        <li class="popImg"><img src="./images/popup/2-2.png" alt="#"></li>
+                        <li class="popImg"><img src="./images/popup/2-3.png" alt="#"></li>
+                    </ul>
+                </div>
+                <!-- popup 3 -->
+                <div class="popup3 popup">
+                    <!-- 이전, 다음 화살표 -->
+                    <!-- button.prev{&#60;} -->
+                    <button class="prev">&#60;</button>
+                    <button class="next">&#62;</button>
+                    <!-- 이미지들 -->
+                    <!-- ul.popList>li.popImg*3>img -->
+                    <ul class="popList">
+                        <li class="popImg"><img src="./images/popup/3-1.png" alt="#"></li>
+                        <li class="popImg"><img src="./images/popup/3-2.png" alt="#"></li>
+                        <li class="popImg"><img src="./images/popup/3-3.png" alt="#"></li>
+                    </ul>
+                </div>
+                <!-- popup 4 -->
+                <div class="popup4 popup">
+                    <!-- 이전, 다음 화살표 -->
+                    <!-- button.prev{&#60;} -->
+                    <button class="prev">&#60;</button>
+                    <button class="next">&#62;</button>
+                    <!-- 이미지들 -->
+                    <!-- ul.popList>li.popImg*3>img -->
+                    <ul class="popList">
+                        <li class="popImg"><img src="./images/popup/4-1.png" alt="#"></li>
+                        <li class="popImg"><img src="./images/popup/4-2.png" alt="#"></li>
+                        <li class="popImg"><img src="./images/popup/4-3.png" alt="#"></li>
+                    </ul>
+                </div>
+                <!-- popup 5 -->
+                <div class="popup5 popup">
+                    <!-- 이전, 다음 화살표 -->
+                    <!-- button.prev{&#60;} -->
+                    <button class="prev">&#60;</button>
+                    <button class="next">&#62;</button>
+                    <!-- 이미지들 -->
+                    <!-- ul.popList>li.popImg*3>img -->
+                    <ul class="popList">
+                        <li class="popImg"><img src="./images/popup/5-1.png" alt="#"></li>
+                        <li class="popImg"><img src="./images/popup/5-2.png" alt="#"></li>
+                        <li class="popImg"><img src="./images/popup/5-3.png" alt="#"></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+</body>
+
+</html>
